@@ -6,7 +6,8 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix"
+    "lint-fix": "eslint . --ext .ts --fix",
+    "typeorm" : "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "repository": "https://github.com/OyakSaile/api-vendas",
   "author": "Kayo Elias <contatodevkayo@gmail.com>",
@@ -31,6 +32,6 @@
     "express-async-errors": "^3.1.1",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.2.1",
-    "typeorm": "^0.3.20"
+    "typeorm": "0.2.29"
   }
 }
