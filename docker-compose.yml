@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: api-vendas
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=api-vendas
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - '5432:5432/tcp'
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+  external-network:
+    external: true
